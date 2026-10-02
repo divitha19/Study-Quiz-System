@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block content %}
+<div class="result-shell"><div class="eyebrow">QUIZ COMPLETE</div><h1>Nice work.</h1><div class="result-score">{{result.score}}<small>%</small></div><p class="result-sub">{{result.correct}} correct out of {{result.total}} questions</p><div class="result-actions"><a class="button primary" href="{{url_for('generate')}}">Generate Another →</a><a class="button secondary" href="{{url_for('dashboard')}}">View Dashboard</a></div></div>{% endblock %}
